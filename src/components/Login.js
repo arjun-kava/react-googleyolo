@@ -25,7 +25,7 @@ export class Login extends PureComponent {
     ],
   }
 
-  onClick = () => {
+  componentDidMount = () => {
     const { googleyolo, clientId, supportedAuthMethods } = this.props
 
     if (!googleyolo) {
